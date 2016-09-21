@@ -15,9 +15,8 @@
   "private": true,
   "scripts": {
     "build": "babel --copy-files --out-dir lib/ src/",
-    "clean": "shx rm -rf lib/ && shx mkdir lib/",
     "prebuild": "npm run clean",
-    "np": "np",
+    "clean": "shx rm -rf lib/ && shx mkdir lib/",
     "test": "npm run build"
   },
   "dependencies": {
@@ -27,7 +26,6 @@
     "xml2js": "^0.4.17"
   },
   "devDependencies": {
-    "babel": "^6.5.2",
     "babel-cli": "^6.10.1",
     "babel-preset-es2015": "^6.9.0",
     "babel-preset-stage-0": "^6.5.0",
